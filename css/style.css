@@ -120,7 +120,7 @@ header .navbar.navbar-light .reg_btn span {
 .banner {
   width: 100%;
   float: left;
-  background: url("/images/banner.jpg") no-repeat center;
+  background: url("../images/banner.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
   height: 400px;
@@ -359,16 +359,19 @@ footer .float-right ul li a:hover {
   }
   header .navbar.navbar-light .reg_btn {
     position: absolute;
-    right: 60px;
+    right: 45px;
     margin: 0;
     top: 0;
+    background: #006a4d;
     line-height: 60px;
   }
   header .navbar.navbar-light .navbar-toggler {
-    background: #69be28;
+    background: #006a4d;
     border-radius: 0;
     height: 60px;
     border: none;
+    left: 15px;
+    position: relative;
   }
 }
 
