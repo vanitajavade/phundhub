@@ -1,128 +1,134 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
-<title>Test</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/style.css" rel="stylesheet" />
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+   <title>Test</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="fonts/stylesheet.css" rel="stylesheet" />
+   <link href="css/style.css" rel="stylesheet" />
 </head>
+
 <body>
 
+
    <header>
-      <div class="container">
-         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home</a>
-                <a class="nav-item nav-link" href="#">AGENDA</a>
-                <a class="nav-item nav-link" href="#">SPEAKERS</a>
-                <a class="nav-item nav-link" href="#">VENUe</a>
-                <a class="nav-item nav-link" href="#">SPONSORS</a>
-              </div>
+      <div class="fix_wrap">
+         <div class="logo"><img src="images/logo.png" /></div>
+         <div class="right">
+            <div class="menu">
+               <ul>
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Fixtures</a></li>
+                  <li><a href="#">Standings</a></li>
+                  <li><a href="#">teams</a></li>
+                  <li><a href="#">galleries</a></li>
+                  <li><a href="#">media</a></li>
+                  <li><a href="#">about</a></li>
+               </ul>
             </div>
-            <a href="#" class="reg_btn"><span>register</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-               <img src="images/ico-hamburger.png">
-             </button>
-          </nav>
+            <div class="search"><i class="fa fa-search" aria-hidden="true"></i></div>
+            <button type="button" class="toggle"><img src="images/menu.png" /></button>
+         </div>
       </div>
    </header>
 
-   <div class="banner d-flex align-items-center">
-      <div class="container">
-         <div class="banner_text">
-            <strong>2016 Institute</strong>
-            <h1>GLOBAL FORUM</h1>
-            <small>21-24 November 2017</small>
+   <div class="banner">
+      <img src="images/banner.jpg" />
+      <div class="banner_text">
+         <div class="content">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit massa auctor cursus feugiat. </h1>
+            <button type="button" class="read_btn">Read More <i class="fa fa-chevron-right"></i></button>
          </div>
       </div>
    </div>
 
-   <div class="about_sec">
-      <div class="container">
-         <div class="row">
-            <div class="col-12 col-sm-12">
-               <h2>ABOUT THE EVENT</h2>
+   <div class="news_sec">
+      <div class="fix_wrap">
+         <div class="news_header">
+            <h2>Recent news</h2>
+            <button class="read_btn">Read More <i class="fa fa-chevron-right"></i></button>
+         </div>
+         <div class="left">
+            <div class="news_img">
+               <img src="images/news-image1.jpg" />
+               <a href="#" class="play_icon"><img src="images/play-icon.png" /></a>
             </div>
-            <div class="col-12 col-md-7">
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-               </p>
-               <span>Vivamus elementum semper</span>
-               <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
-               <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. </p>
-            </div>
-            <div class="col-12 col-sm-12 col-md-5">
-               <img src="images/about-img.jpg"/>
+            <div class="news_txt">
+               <div class="left_txt">
+                  <h6>Video</h6>
+                  <p>September 12, 2017</p>
+               </div>
+               <div class="right_txt">
+                  <h4>Lorem Ipsum is simply dummy text of the printing.</h4>
+               </div>
             </div>
          </div>
-      </div>
-   </div>
-
-   <div class="speakers_sec text-center">
-      <div class="container">
-         <div class="row">
-            <div class="col-12 col-sm-12">
-               <div class="sp_head">
-                  <h3>CONFIRMED SPEAKERS</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-               </div>   
-            </div>
-            <div class="sp_cell">
-            <div class="row">
-               <div class="col-6 col-md-3">
-                  <img src="images/jane.png"/>
-                  <h6>JANE BRAND</h6>
-                  <small>Managing Partner <br> OpenView Events</small>
+         <div class="right">
+            <div class="news_cell">
+               <div class="news_left">
+                  <img src="images/news-image2.jpg" />
+                  <a href="#" class="play_icon"><img src="images/play-icon.png" /></a>
                </div>
-              <div class="col-6 col-md-3">
-                  <img src="images/martin.png"/>
-                  <h6>MARTIN HARRIS</h6>
-                  <small>VP Human Resources <br> Blue Napkin </small>
-               </div>
-               <div class="col-6 col-md-3">
-                  <img src="images/daniel.png"/>
-                  <h6>DANIEL HERMAN</h6>
-                  <small>Managing Director <br> ZenDuck</small>
-               </div>
-               <div class="col-6 col-md-3">
-                  <img src="images/stanley.png"/>
-                  <h6>STANLEY JENNER</h6>
-                  <small>Managing Director <br> HipKitten</small>
+               <div class="news_right">
+                  <h6>Video</h6>
+                  <p>September 12, 2017</p>
+                  <h4>Lorem Ipsum is simply dummy text of the printing.</h4>
                </div>
             </div>
-            </div>   
-            <div class="col col-sm-12">
-               <a href="#" class="view_btn"><span>view all speakers</span></a>
+            <div class="news_cell">
+               <div class="news_left">
+                  <img src="images/news-image3.jpg" />
+                  <a href="#" class="play_icon"><img src="images/images-icon.png" /></a>
+               </div>
+               <div class="news_right">
+                  <h6>6 photos</h6>
+                  <p>September 12, 2017</p>
+                  <h4>Lorem Ipsum is simply dummy text of the printing.</h4>
+               </div>
             </div>
          </div>
       </div>
    </div>
 
-   <footer class="d-flex align-items-center">
-      <div class="container">
-         <div class="row">
-            <div class="col col-md-6 d-flex align-items-end">
-               <small>&copy; 2017</small>
-            </div>
-            <div class="col col-md-6">
-               <div class="float-right">
-               <h6>FOLLOW US</h6>
-               <ul>
-                  <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               </ul>
-               </div>
-            </div>
+   <div class="sponsor_sec">
+      <div class="fix_wrap">
+         <h3>OUR sponsors</h3>
+         <ul>
+            <li><img src="images/sponsor-1.png" /></li>
+            <li><img src="images/sponsor-2.png" /></li>
+            <li><img src="images/sponsor-3.png" /></li>
+            <li><img src="images/sponsor-4.png" /></li>
+         </ul>
+         <a class="up_arrow"><img src="images/up-arrow.png" /></a>
+      </div>
+   </div>
+
+   <footer>
+      <div class="fix_wrap">
+         <div class="left">Copyright &copy; 2019. All Rights Reserved. </div>
+         <div class="right">
+            <span>Powered by:</span>
+            <i><img src="images/si-logo.png" /></i>
          </div>
       </div>
    </footer>
 
+
+   <script src="js/jquery-3.5.0.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $(".menu").hide();
+         $(".toggle").click(function () {
+            $(".menu").slideToggle(200);
+         });
+         $('.up_arrow').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+            return false;
+         });
+      });
+   </script>
 </body>
 </html>
