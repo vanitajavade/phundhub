@@ -43,7 +43,7 @@ p {
 
 .fix_wrap {
   width: 100%;
-  max-width: 1070px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -60,12 +60,15 @@ header{padding: 40px 0 0;}
 .main .content .details li{font-size:20px; padding:0 0 20px 35px; position: relative;}
 .main .content .details li:before{width:23px; height:23px; background:url(../images/check.png); position: absolute; left: 0; content: "";}
 .main .form{background: #dee9f1; width:100%; float: left; padding: 40px 45px; border-radius: 10px;}
+.main.account .form{min-height:590px;}
 .form .input_filed input, .form .input_filed select {height: 64px; width:100%; border-radius: 10px; border: 1px solid #777777; font-size: 18px; color: #777777; padding: 0 15px; box-shadow: 0 0 10px rgb(0 0 0 / 10%);}
 .form .input_filed input:focus-visible, .form .input_filed select:focus-visible{border:1px solid #FD7F39; outline: none;}
 .form .input_filed select{-webkit-appearance: none; -moz-appearance:none; appearance:none; background-image: url(../images/down.png); background-repeat: no-repeat; background-position: 97% center;}
-.form .input_filed{margin-bottom: 15px; width:100%; float: left;}
+.form .input_filed{margin-bottom: 15px; width:100%; float: left; position: relative;}
+.input_filed .info{position:absolute; right:12px; top:22px; cursor: pointer;}
+
 .form .input_filed.input_right{float: right;}
-.form .input_part .input_filed{width:48%;}
+.form .input_part .input_filed{width:48.5%;}
 .form .input_btn{text-align: center; margin:15px 0 30px; width:100%; float: left;}
 .form .input_btn input {display: inline-block; transition: 0.5s; cursor: pointer; height: 60px; background: #FD7F39; width: 225px; border: none; border-radius: 20px; font-weight: 700; font-size: 24px; color: #FFFFFF;}
 .form .input_btn input:hover{background:#000;}
@@ -94,6 +97,43 @@ footer .footer_content ul li{display: inline-block; margin:12px 30px 0 0;}
 .account_step li.active a{font-weight: 700;}
 .account_step li.active:after{box-shadow: 0px 0px 0px 3px #FD7F39 inset;}
 .account_step li.done:after{background: url(../images/check.png);}
-.main .right h2{font-size: 36px; font-weight: 500; padding:0 0 25px 65px;}
-.main.account .left{width: 30%;}
-.main.account .right{width: 70%;}
+.main .right .min_head{padding:0 40px 28px 65px;}
+.main .right .min_head h2{font-size: 36px; font-weight: 500;}
+.main .right .min_head p{font-size: 17px; margin-top:10px;}
+.main.account .left{width: 35%;}
+.main.account .right{width: 65%;}
+
+.form .input_part .input_filed.six_part{width:58.5%;}
+.form .input_part .input_filed.four_part{width:38.5%;}
+.form .input_part.three_box .input_filed.mid_box{width:23%; margin-left:3%;}
+.form .input_part.three_box .input_filed.input_right{width:22.5%;}
+.form .input_part.three_box .input_filed.mid_box select{background-position:92% center;}
+.form .input_btn.btn_right{text-align:right; margin-bottom:0;}
+
+.file_upload{padding:60px 0 60px 0; text-align: center; display: flex;}
+.file_upload li{width:33.33%}
+.file_upload li .file{position: relative; width:138px; height:173px; display: inline-block;}
+.file_upload li .file input[type="file"]{width:100%; height:100%; cursor: pointer;  position: relative; z-index: 9; opacity: 0;}
+.file_upload li .file .file_img{width:100%; height:100%; background-image: url(../images/file.png); background-repeat: no-repeat; position: absolute; top:0; left:0; }
+.file_upload li .file.file_done .file_img{background-image: url(../images/file_done.png);}
+.file_upload li .month{font-size: 17px; color:#777777; font-weight: 500;}
+.process .progress_bar {
+  width: 138px;
+  height: 4px;
+  background: #D3D3D3;
+  display: inline-block;
+  border-radius: 40px;
+}
+.process .progress_bar .progress_status{height: 100%; background: #777777; border-radius: 50px;}
+.file_upload li .process{text-align: center; min-height: 30px; margin-top: 3px;}
+.process .delete{display:inline-block; margin:0 5px; cursor:pointer;}
+
+.account_info .head{width: 100%; float: left; margin-bottom: 25px;}
+.account_info .head h3{font-size: 30px; font-weight: 500; float: left;}
+.account_info .head .edit{float: right;}
+
+.account_info{width: 100%; float: left; border-bottom: 3px solid #A8C6DA; padding-bottom: 15px; margin-bottom: 40px;}
+.edit_content{width: 100%; float: left; display: flex; flex-wrap: wrap;}
+.edit_content .content{width:50%; margin-bottom:20px;}
+.edit_content .content span{color:rgba(68,68,68,0.7); display: block; font-size: 17px; margin-bottom:8px;}
+.edit_content .content p{color:#444444; font-size: 17px; font-weight: 500;margin-bottom: 5px;}
